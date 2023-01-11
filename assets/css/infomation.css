@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+.wrapper {
+	max-width: 1200px;
+	width: 100%;
+    height: auto;
+	margin: 0 auto;
+	font-size: 1rem;
+    background-color: aquamarine;
+}
+
+/* h2 text -------------------- */
+#information h2 {
+    font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 2em;
+	text-align: center;
+    padding-left: 10%;
+
+	position: relative;     /* 花飾り */
+}
+h2::before {     /* 花飾り */
+    content: url("../images/flower.png");
+    position: absolute;
+    top: 0;
+    right: 35%;
+}
+
+/* h2 underline -------------------- */
+.h2Line {
+	display: flex;
+	align-items: center;
+	width: 60%;
+    padding-left: 10%;
+	margin: 0 auto;
+}
+.h2Line::before,
+.h2Line::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px; /* 線の太さ */
+    background: #000; /* 線の色 */
+    margin:0 3px; /* 文字と線の余白 */
+    width: 20%;
+}
+
+/* information  ========================= */
+#information {
+    width: 90%;
+    background-color: beige;
+}
+
+#information dl {
+    margin-top: 1.5rem;
+}
+
+.dlInfo {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.dlInfo dt {
+    flex: 0 0 15%;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    padding-left: 10%;
+    background-color: bisque;
+}
+
+.dlInfo dd:first-of-type {
+    flex: 1 0 75%;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    background-color: azure;
+}
+
+.dlInfo dd:last-of-type {
+    /* width: 70%; */
+    flex: 0 0 70%;
+    padding-left: 25%;
+    padding-right: 5%;
+    border-top: 1px solid #000;
+    line-height: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    background-color: #a9a9a9;
+}
+
+/* .dlInfo dt,
+.dlInfo dd:first-of-type {
+    display: inline-block;
+    border-bottom: 1px solid #000;
+}
+
+.dlInfo dt {
+    width: 15%;
+    font-size: 1.125rem;
+    padding-left: 10%;
+    background-color: bisque;
+}
+
+.dlInfo dd:first-of-type {
+    width: 75%;
+    font-size: 1.25rem;
+    background-color: azure;
+}
+
+.dlInfo dd:last-of-type {
+    width: 45%;
+    padding-left: 25%;
+    background-color: #a9a9a9;
+} */

@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+.h2BackImg {
+	background-image: url("../images/contact/contact_h2.jpg");
+}
+
+dl {
+    width: 60%;
+    margin: 2em auto 2em;
+    line-height: 3em;
+    font-family: 'Lora', '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+}
+@media screen and (max-width: 599px) {
+    dl  {
+        font-size: 0.875rem; 
+	    width: 90%;
+        text-align: center;
+    }
+}
+
+dt, dd {
+    border-bottom: 1px dotted #005fd3;
+    float: left;
+}
+
+@media screen and (max-width: 599px) {
+    dt, dd {
+        border-bottom: 0px dotted #005fd3;
+    }
+}
+
+dt {
+    clear: both;
+    width: calc(45% - 1em);
+    padding-left: 1em;
+    position: relative;
+}
+@media screen and (max-width: 599px) {
+    dt  {
+        width: calc(100% - 2em);
+        padding-top: 0.25em;
+        padding-left: 0;
+        padding-right: 2em;
+        font-weight: bold;
+    }
+}
+
+.lastDt {
+    line-height: 3em;
+}
+@media screen and (max-width: 599px) {
+    .lastDt {
+    	width: calc(90% - 2em);
+    	padding-left: 2em;
+        /* padding-top: 0.25em;
+        padding-left: 0;
+        padding-right: 2em;
+        font-weight: bold; */
+    }
+}
+
+
+.required {
+    /* 必須アイコン */
+    font-size: 0.75em;
+    line-height: 1.5em;
+    padding-left: 3px;
+    padding-right: 3px;
+    background: #cd4700;
+    color: #fff;
+    border-radius: 4px;
+    /* 位置調整 */
+    position: absolute;
+    top: 1.5em;
+    margin-left: 0.75em;
+}
+
+dd {
+    font-weight: bold;
+    width: 55%;
+    height: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+@media screen and (max-width: 599px) {
+    dd  {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 1em;
+        /* border-bottom: 1px dotted #005fd3; */
+    }
+}
+
+main input, textarea {
+    box-sizing: content-box;
+    display: block;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    line-height: 2em;
+    height: 2em;
+    font-family: 'Lora', '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    font-weight: bold;
+    width: 70%;
+    /* padding: 0; */
+}
+@media screen and (max-width: 599px) {
+    main input, textarea {
+        /* margin-left: 1em; */
+        margin: 0 auto;
+    }
+}
+
+select {
+    box-sizing: content-box;
+    /* line-height: 2em; */
+    height: 2em;
+    vertical-align: text-bottom;
+    font-family: 'Lora', '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    font-weight: bold;
+    padding: 0 auto;
+}
+@media screen and (max-width: 599px) {
+    select {
+        /* margin-left: 1em; */
+        margin: 0 auto;
+    }
+}
+
+
+main label {
+    display: none;
+}
+
+textarea {
+    font-size: 0.875em;
+    height: 6em;
+}
+/* @media screen and (max-width: 599px) {
+    textarea {
+        width: calc(100% - 1em);
+    }
+} */
+
+.textareaRowDt {
+    height: 6em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+@media screen and (max-width: 599px) {
+    .textareaRowDt {
+        height: 3em;
+        padding-top: 0;
+        padding-bottom: 0;
+    	width: calc(90% - 2em);
+    	padding-left: 1em;
+    }
+}
+@media screen and (max-width: 599px) {
+    .revtextareaRowDt {
+    	padding-left: 2em;
+    }
+}
+
+.textareaRowDd {
+    font-weight: bold;
+    width: 55%;
+    height: 6em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+@media screen and (max-width: 599px) {
+    .textareaRowDd {
+        width: 100%;
+        padding-top: 0;
+    }
+}
+
+input[type="submit"] {
+    font-size: 1em;
+	padding: 0.25em 2em;
+    background-color: #c7d1dd;
+    border: 1px solid #c7d1dd;;
+    border-bottom: 1px solid #000;
+    /* border-top: 5px solid #fff;
+    border-left: 5px solid transparent; */
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
+}
+input[type="submit"]:hover {
+    opacity: 0.6;
+}
+
+#contactSec {
+    margin-bottom: 8em;
+}

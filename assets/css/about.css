@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+.h2BackImg {
+	background-image: url("../images/about/about_h2.jpg");
+}
+/* @media screen and (max-width:599px) {
+	.h2BackImg {
+		width: 90%;
+	}
+} */
+
+.message {
+    font-size: 0.875rem;
+    line-height: 2em;
+    writing-mode: vertical-rl;
+    width: 90%;
+    height: 22em;
+    margin: 3em auto 0;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 599px) {
+    .message {
+        /* font-size: 0.875rem; */
+        /* padding-top: 2em; */
+        /* line-height: 2em; */
+        writing-mode: lr;
+        /* width: 90%; */
+        /* height: auto; */
+        /* margin: 3em auto 0; */
+        display: block;
+        /* align-items: center; */
+    }
+    .message p {
+        margin-top: 1em;
+    }
+    .name {
+        margin-top: 2em;
+        /* font-size: 1em; */
+        float: right;
+    }
+}
+
+.message p {
+    margin-left: 1em;
+}
+
+.name {
+    margin-right: 1.5em;
+    font-size: 1em;
+}
+
+.name span {
+    font-size: 1.5em;
+}
+
+
+/* history  ========================= */
+#history {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10%;
+	/* background-color: #f1f1f1; */
+}
+@media screen and (max-width: 599px) {
+    #history {
+    	display: block;
+        width: 100%;
+        gap: 0;
+    }
+}
+
+.historyLeft {
+    flex: 1 1 45%;
+    /* background-color: bisque; */
+    min-width: 290px;
+}
+@media screen and (max-width: 599px) {
+    .historyLeft {
+        width: 100%;
+        min-width: 200px;
+    }
+}
+
+.historyP {
+    line-height: 1.5em;
+    padding: 2em 0;
+}
+@media screen and (max-width: 599px) {
+    .historyP {
+        display: block;
+        width: 80%;
+        font-size: 0.875rem;
+        margin: 0 auto;
+    }
+}
+
+.historyP p {
+    margin-bottom: 1em;
+    line-height: 2em;
+}
+
+.historyRight {
+    flex: 1 1 45%;
+    /* background-color: beige; */
+    min-width: 290px;
+}
+@media screen and (max-width: 599px) {
+    .historyRight {
+        width: 100%;
+        min-width: 200px;
+
+    }
+}
+
+.historyRight p {
+    width: 100%;
+    text-align: center;
+}
+@media screen and (max-width: 599px) {
+    .historyRight p {
+        width: 80%;
+        min-width: 200px;
+        margin: 0 auto;
+    }
+}

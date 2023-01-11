@@ -1,0 +1,381 @@
+@charset "UTF-8";
+
+/* body {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-weight: bold;
+	font-weight: 1rem;
+} */
+
+.wrapper {
+	max-width: 1200px;
+	width: 100%;
+    height: auto;
+	margin: 0 auto;
+	font-size: 1rem;
+	position: relative;	/* instagram用 */
+}
+
+header {
+	font-weight: bold;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 150;
+	/* background-color: #fff; */
+	backdrop-filter: saturate(180%) blur(3px);
+	background-color: rgba(255, 255, 255, 0.8);
+	/* background-color: hsla(0, 0%, 100%, 0.7); */
+	/* background-color: #f1f1f1; */
+	/* mix-blend-mode: difference;
+	z-index: 200; */
+
+	/* color: inherit; */
+}
+
+main {
+	margin-top: 160px;
+}
+@media screen and (max-width: 599px) {
+	main {
+		margin-top: 140px;
+	}
+}
+
+/* header a {
+	mix-blend-mode: difference;
+	z-index: 200;
+} */
+
+
+header p a {
+	text-decoration: underline 1px;
+}
+
+.navs {
+	/*float: right;*/
+	text-align: right;
+	line-height: 2.5rem;
+}
+
+.navs .contact {
+	position: relative;
+	z-index: 200;
+}
+	
+nav ul {
+	border-bottom: 1px solid #000;
+	width: 70%;
+	text-align: right;
+	margin: 0 0 0 auto;
+	/*min-width: 500px;*/
+
+}
+
+nav ul li {
+	display: inline-block;
+	/*width: 20%;*/
+}
+
+nav ul li + li {
+	margin-left: 1.5em;
+}
+
+nav ul li a {
+	display: inline-block;
+	font-weight: bold;
+	width: 100%;
+	/*min-width: 100px;*/
+	/*height: 45px;*/
+	line-height: 2.5rem;
+	text-align: center;
+	
+}
+
+nav ul li a:hover,
+header p a:hover,
+footer ul li a:hover {
+	/* color: #a1a1a1; */
+	opacity: 0.5;
+	text-decoration: underline;
+}
+
+	input {
+		display: none;
+	}
+
+@media screen and (max-width: 599px) {
+	/* ハンバーガーメニュー */
+
+	label {
+		position: relative;
+		display: inline-block;
+		width: 25px;
+		height: 22px;
+		border: 1px solid #000;
+		padding: 0.6em 0.4em 0.4em;
+		right: 10px;
+	}
+	label span,
+	label span::before,
+	label span::after {
+		display: block;
+		height: 1px;
+		width: 25px;
+		background-color: #000;
+		content: "";
+		position: absolute;
+	}
+	label span::before {
+		top: 8px;
+	}
+	label span::after {
+		top: 16px;
+	}
+
+	.fadeIn {
+		animation-name: fabeInAnime;
+		animation-duration: 2.9s;
+		animation-fill-mode: forwards;
+		opacity: 0;
+		/* padding-left: 10%; */
+	}
+	@keyframes fabeInAnime {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	nav {
+		position: fixed;
+		top: 90px;
+		left: 0;
+		z-index: 99;
+		width: 100%;
+		height: 700px;
+		background-color: #fff;
+		background-image: url("../images/nav_bg.png");
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: 80%;
+		transform: translateY(-200%);
+		transition: 0.8s;
+	}
+	nav ul {
+		border-bottom: none;
+		width: 100%;
+		text-align: center;
+		margin: 1em auto 0;
+	}
+	nav ul li {
+		display: block;
+	}
+	nav ul li + li {
+		margin-left: 0;
+	}
+	#check:checked ~ nav {
+		transform: translateY(0%);
+	}
+	h1 {
+		position: relative;
+		z-index: 100;
+		margin: 0 auto;
+		text-align: center;
+		width: 240px;
+	}
+}
+
+.instaDiv {
+		/*position: absolute;
+		top: 100px;
+		right: 0;*/
+		position: absolute;
+		top: 100px;
+		right: 0;
+		/*z-index: 99;
+		display: inline-block;
+		width: 100%;
+		max-width: 1200px;
+		height: auto;
+		margin: 0 0 0 auto;*/
+}
+
+.instagramLink {
+	/*text-align: right;
+	margin: 0 0 0 auto;*/
+	width: 40px;
+	/*height: 40px;
+	z-index: 110;*/
+}
+
+
+@media screen and (max-width: 599px) {
+	.instaDiv {
+		top: 90px;
+		right: 0;
+		padding-right: 10px;
+		z-index: 200;
+	}
+	.instagramLink img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+
+h1 {
+	/*clear: both;
+	text-align: left;*/
+	margin-left: 2%;
+	margin-bottom: 0.5em;
+	/*padding-left: 0.5em;*/
+}
+@media screen and (max-width: 599px) {
+	h1 {
+		position: fixed;
+		top: 40px;
+		left: 0;
+		right: 0;
+		margin-left: 5%;
+		z-index: 300;
+		/*position: fixed;*/
+		/*bottom: 150px;*/
+		/*right: 0;*/
+	}
+}
+
+/* h1 a {
+	width: auto;
+	height: 40px;
+} */
+
+/* -- header-nav_end -- */
+
+.mainVisual p:first-of-type {
+	text-align: left;
+	margin: 0;
+	max-width: 47%;
+}
+@media screen and (max-width: 599px) {
+	.mainVisual p:first-of-type {
+		max-width: 80%;
+    }
+}
+
+/* footer ============================== */
+footer {
+	width: 100%;
+	/*margin: 10em auto 0;*/
+	text-align: center;
+	background-color: #c7d1dd;
+}
+
+footer::before {
+	content: "";
+	display: inline-block;
+	background-image: url(../images/oume_02.png);
+	background-position: center bottom;
+	background-size: contain;
+	/* background-repeat: no-repeat; */
+	background-repeat: repeat-x;
+	background-color: #f1f1f1;
+	width: 100%;
+	/* max-width: 1200px; */
+	height: auto;
+	min-height: 40px;
+}
+	
+footer .footerLogo {
+	margin: 3.5rem auto 1em;
+}
+
+h1 a:hover,
+footer .footerLogo a:hover {
+	opacity: 0.6;
+}
+
+footer .tel {
+	font-size: 1.125em;
+	letter-spacing: 0.25em;
+}
+
+footer ul li {
+	display: inline-block;
+	font-weight: bold;
+}
+footer ul li + li {
+	margin-left: 2em;
+	line-height: 3em;
+	margin-top: 1rem;
+}
+@media screen and (max-width: 599px) {
+	footer ul {
+		margin-top: 1em;
+	}
+	footer ul li {
+		display: block;
+		line-height: 2.5em;
+	}
+	footer ul li + li {
+		margin-left: 0;
+		line-height: 2.5em;
+		margin-top: 0;
+	}
+}
+
+footer small {
+	line-height: 4em;
+	font-size: 0.875rem;
+}
+@media screen and (max-width: 599px) {
+	footer small {
+		font-size: 0.75rem;
+	}
+}
+
+/* === clearfix =============== */
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* nav用カレント設定 =============== */
+#top .top a,
+#style .style a,
+#menu .menu a,
+#about .about a,
+#access .access a,
+#contact .contact a {
+	/* color: rgba(0,0,0,0); */
+	color: #c7d1dd;
+	-webkit-text-stroke: 1px #000; 
+}
+
+/* BackCol */
+.innerBackCol {
+	width: 100%;
+	height: auto;
+	background-color: #f1f1f1;
+	padding: 8em 0;
+	margin: 8em 0 0 0;
+}
+
+.innerBackCol:last-of-type {
+	background-image: url("../images/tree.png");
+	background-position: bottom 2.5rem right;
+	background-repeat: no-repeat;
+	background-size: 168px 81px;
+}
+
+@media screen and (max-width: 599px) {
+	.innerBackCol:last-of-type {
+		background-position: bottom 1.5rem right;
+		background-size: 105px auto;
+    }
+}

@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+.h2BackImg {
+	background-image: url("../images/access/access_h2.jpg");
+}
+
+dl {
+    width: 60%;
+    margin: 3em auto 2em;
+    line-height: 3em;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+}
+@media screen and (max-width: 599px) {
+    dl  {
+        font-size: 0.875rem; 
+	    width: 90%;
+    }
+}
+
+dt, dd {
+    border-bottom: 1px dotted #005fd3;
+    float: left;
+}
+
+dt {
+    clear: both;
+    width: calc(25% - 1em);
+    padding-left: 1em;
+    font-weight: bold;
+
+}
+dt:nth-of-type(2)  {
+    line-height: 8em;
+    vertical-align: top;
+}
+/* @media screen and (max-width: 599px) {
+    dt:nth-of-type(2)  {
+        line-height: 6em;
+        vertical-align: top;
+    }
+} */
+
+dd {
+    /* font-weight: bold; */
+    width: calc(75% - 1em);
+    padding-left: 1em;
+}
+
+dd:nth-of-type(2)  {
+    line-height: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+dd:nth-of-type(2) br {
+    display: block;
+}
+
+@media screen and (max-width: 599px) {
+    dd:nth-of-type(2)  {
+        line-height: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-right: 1em;
+        width: calc(70% - 1em);
+        /* line-height: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em; */
+    }
+}
+
+.map {
+    text-align: center;
+    overflow: hidden;
+}
+@media screen and (max-width: 599px) {
+    .map  {
+	    width: 90%;
+        margin: 0 auto;
+    }
+    iframe {
+	    width: 100%;
+        height: auto;
+    }
+}
+
+
+/* .dd {
+	font-size: 1rem;
+	line-height: 1.5em;
+	width: 60%;
+	text-align: center;
+    margin: 0 auto;
+    margin-top: 1.5em;
+} */
+
